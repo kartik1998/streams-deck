@@ -3,7 +3,7 @@ const { Readable } = require("stream");
 const advices = [
   "No ice for drinks? Use frozen vegetables.",
   "If you feel alone, watcha horror movie before going to be. You won't feel alone anymore.",
-  "Don't have sex after chopping jalapeños",
+  "Wake up early",
   "If you can't blind them with brilliance, baffle them with nonsense",
   "Always borrow money from a pessimist, they won't expect it back",
 ];
@@ -21,9 +21,9 @@ class StreamFromArray extends Readable {
         data: this.array[this.index],
         index: this.index,
       };
-      this.push(chunk);
+      this.push(chunk); // pushing a chunk in the stream pipeline
       this.index += 1;
-    } else this.push(null);
+    } else this.push(null); // pushing null into a stream pipeline means that the stream has ended
   }
 }
 
