@@ -16,3 +16,4 @@
 
 - [Readable Streams, constructing a stream from an array | inheriting Readable](https://github.com/kartik1998/streams-deck/tree/master/readable_streams)
   - [reference](https://www.youtube.com/watch?v=_pqv06ySvuk&list=PLrwNNiB6YOA18XANsFe0CnizlhYKjJT0f&index=2)
+  - Streams have two modes binary mode and object mode. To get human readable data (object mode) you need to set the encoding as UTF-8

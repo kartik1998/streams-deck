@@ -11,6 +11,7 @@ const advices = [
 class StreamFromArray extends Readable {
   constructor(array) {
     super({ objectMode: true }); //encoding: 'UTF-8' => Converts buffer to string
+    // super(); if you don't want the chunk to be a buffer like <10 20 40 ....>
     this.array = array;
     this.index = 0;
   }

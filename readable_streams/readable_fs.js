@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const readStream = fs.createReadStream("./anime_dancing.mp4");
+const readStream = fs.createReadStream("../anime_dancing.mp4");
 
 readStream.on("data", (chunk) => {
   console.log("size:", chunk.length);
@@ -20,6 +20,7 @@ readStream.pause();
 process.stdin.on("data", (chunk) => {
   if (chunk.toString().trim() === "finish") {
     readStream.resume();
+  } else {
+    readStream.read();
   }
-  readStream.read();
 });
