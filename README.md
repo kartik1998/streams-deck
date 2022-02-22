@@ -31,4 +31,5 @@
   - `Duplex` stream implements both a readable stream and a writable stream
   - `Transform` streams are essential to node. Example nodejs comes with zlib package which compresses data from readable streams and pipes it into a writable stream. `crypto` node module can encrypt / decrypt data from readable stream and pipe it to write stream via `Transform` streams
 
-- [Http streaming]()
+- [Http streaming](https://github.com/kartik1998/streams-deck/tree/master/http_streaming)
+  - [reference](https://www.youtube.com/watch?v=CiGnubZC5cs&list=PLrwNNiB6YOA18XANsFe0CnizlhYKjJT0f&index=5)
