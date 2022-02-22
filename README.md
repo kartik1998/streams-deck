@@ -20,6 +20,11 @@
   - Streams have two modes binary mode and object mode. To get human readable data (object mode) you need to set the encoding as UTF-8
 
 - [Writable Streams, Back pressuring](https://github.com/kartik1998/streams-deck/tree/master/writeable_streams_backpressuring)
- - [reference](https://www.youtube.com/watch?v=FS2OWxS5P_E&list=PLrwNNiB6YOA18XANsFe0CnizlhYKjJT0f&index=3)
 
-- [Pipe, Duplex and Transform streams]()
+  - [reference](https://www.youtube.com/watch?v=FS2OWxS5P_E&list=PLrwNNiB6YOA18XANsFe0CnizlhYKjJT0f&index=3)
+
+- [Pipe, Duplex and Transform streams](https://github.com/kartik1998/streams-deck/tree/master/pipe_duplex_transform_streams)
+  - [reference](https://www.youtube.com/watch?v=rQXaDH__Suk&list=PLrwNNiB6YOA18XANsFe0CnizlhYKjJT0f&index=4)
+  - `pipe` method basically allows us to pipe data from any readable stream to any writable stream
+  - `pipe` method automatically handles back pressuring for us
+  - `Duplex` stream implements both a readable stream and a writable stream

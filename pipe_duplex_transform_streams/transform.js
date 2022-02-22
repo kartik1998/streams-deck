@@ -15,7 +15,7 @@ class ReplaceText extends Transform {
   }
 
   _flush(callback) {
-    this.push("more stuff us being passed through...");
+    this.push("more stuff is being passed through...");
     callback();
   }
 }

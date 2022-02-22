@@ -12,7 +12,7 @@ class Throttle extends Duplex {
   _read() {}
 
   _write(chunk, encoding, callback) {
-    this.push(chunk);
+    this.push(chunk); // pushing a chunk in the stream pipeline
     setTimeout(callback, this.delay);
   }
 
