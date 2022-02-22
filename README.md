@@ -21,3 +21,5 @@
 
 - [Writable Streams, Back pressuring](https://github.com/kartik1998/streams-deck/tree/master/writeable_streams_backpressuring)
  - [reference](https://www.youtube.com/watch?v=FS2OWxS5P_E&list=PLrwNNiB6YOA18XANsFe0CnizlhYKjJT0f&index=3)
+
+- [Pipe, Duplex and Transform streams]()

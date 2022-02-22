@@ -1,7 +1,7 @@
 const { Duplex, PassThrough } = require("stream");
 const { createReadStream, createWriteStream } = require("fs");
-const readStream = createReadStream("./anime_dancing.mp4");
-const writeStream = createWriteStream("./copy.mp4");
+const readStream = createReadStream("../anime_dancing.mp4");
+const writeStream = createWriteStream("../copy.mp4");
 
 class Throttle extends Duplex {
   constructor(ms) {
