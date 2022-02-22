@@ -15,5 +15,9 @@
   - If you run `node --trace_gc buffer_vs_stream/buffer.js` & `node --trace_gc buffer_vs_stream/stream.js` (and open multiple tabs on localhost:3000 in your browser) you'll notice that **mark sweeps** in the stream.js process are very less as compared to buffer.js process (which is what we prefer because we want less mark sweeps). You'll also notice that while buffer.js spikes up the memory (when you open multiple tabs on localhost:3000) and then the memory instantly drops down (because the file was loaded into buffer and now has been served to client) this is not the case for stream.js because it sends the file buffers as a `stream`.
 
 - [Readable Streams, constructing a stream from an array | inheriting Readable](https://github.com/kartik1998/streams-deck/tree/master/readable_streams)
+
   - [reference](https://www.youtube.com/watch?v=_pqv06ySvuk&list=PLrwNNiB6YOA18XANsFe0CnizlhYKjJT0f&index=2)
   - Streams have two modes binary mode and object mode. To get human readable data (object mode) you need to set the encoding as UTF-8
+
+- [Writable Streams, Back pressuring](https://github.com/kartik1998/streams-deck/tree/master/writeable_streams_backpressuring)
+ - [reference](https://www.youtube.com/watch?v=FS2OWxS5P_E&list=PLrwNNiB6YOA18XANsFe0CnizlhYKjJT0f&index=3)
