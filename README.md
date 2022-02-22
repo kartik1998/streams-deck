@@ -28,3 +28,4 @@
   - `pipe` method basically allows us to pipe data from any readable stream to any writable stream
   - `pipe` method automatically handles back pressuring for us
   - `Duplex` stream implements both a readable stream and a writable stream
+  - `Transform` streams are essential to node. Example nodejs comes with zlib package which compresses data from readable streams and pipes it into a writable stream. `crypto` node module can encrypt / decrypt data from readable stream and pipe it to write stream via `Transform` streams
