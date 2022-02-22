@@ -6,3 +6,4 @@
 #### Index
 
 - [Streams Introduction (Buffer vs Stream)](https://github.com/kartik1998/streams-deck/tree/master/buffer_vs_stream)
+  - `--trace_gc` (view garbage collection logs)
