@@ -1,7 +1,7 @@
-const {createReadStream, createWriteStream} = require('fs');
+const { createReadStream, createWriteStream } = require("fs");
 
 // const readStream = createReadStream('./anime_dancing.mp4');
-const writeStream = createWriteStream('./file.txt');
+const writeStream = createWriteStream("./file.txt");
 
 // readStream.pipe(writeStream).on('error', console.error);
 
