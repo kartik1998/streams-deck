@@ -34,3 +34,6 @@
 
 - [Http streaming](https://github.com/kartik1998/streams-deck/tree/master/http_streaming)
   - [reference](https://www.youtube.com/watch?v=CiGnubZC5cs&list=PLrwNNiB6YOA18XANsFe0CnizlhYKjJT0f&index=5)
+
+- [Stream Conf](https://www.youtube.com/watch?v=aTEDCotcn20)
+  - async/await, promises don't work well with streams   
