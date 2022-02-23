@@ -37,3 +37,4 @@
 
 - [Stream Conf](https://www.youtube.com/watch?v=aTEDCotcn20)
   - async/await, promises do **NOT** work well with **streams**   
+  - Don't change the behaviour of internal node streams. That may cause everything to break because most of node functionality relies on streams
