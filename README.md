@@ -36,4 +36,4 @@
   - [reference](https://www.youtube.com/watch?v=CiGnubZC5cs&list=PLrwNNiB6YOA18XANsFe0CnizlhYKjJT0f&index=5)
 
 - [Stream Conf](https://www.youtube.com/watch?v=aTEDCotcn20)
-  - async/await, promises don't work well with streams   
+  - async/await, promises do **NOT** work well with **streams**   
