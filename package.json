@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/kartik1998/streams-deck#readme",
   "dependencies": {
+    "async": "^3.2.3",
     "axios": "^0.26.0"
   }
 }
