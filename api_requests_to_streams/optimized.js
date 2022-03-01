@@ -4,22 +4,21 @@ const { PassThrough } = require("stream");
 const BASE_URL = "https://jsonplaceholder.typicode.com/";
 
 // need to ensure it's correctness
+// since queue elements resolution is unsorted be careful if you use this 
 
-function main() {
+async function main() {
   const stream = new PassThrough({ objectMode: true });
   populateStream(stream);
-  stream.on("data", (data) => {
-    console.log(data);
-  });
-  stream.on("end", () => {
-    console.log("end");
-  });
+  for await (const chunk of stream) {
+    console.log(chunk);
+  }
 }
 
 function populateStream(stream) {
   async function worker(skip, cb) {
     const res = await axios.get(BASE_URL + `posts/${skip}`);
     stream.push(res.data);
+    // stream.push(null); // just push null to break the stream
     return cb();
   }
   const queue = async.queue(worker, 50);
