@@ -4,9 +4,9 @@ const { Readable } = require("stream");
 const BASE_URL = "https://jsonplaceholder.typicode.com/";
 
 class StreamFromApiCalls extends Readable {
-  constructor() {
+  constructor(skip = 1) {
     super({ objectMode: true }); // encoding: 'UTF-8' => Converts buffer to string
-    this.skip = 1;
+    this.skip = skip;
   }
 
   _read() {
@@ -26,7 +26,7 @@ class StreamFromApiCalls extends Readable {
 }
 
 async function main() {
-  const stream = new StreamFromApiCalls();
+  const stream = new StreamFromApiCalls(98);
   stream.on("data", (data) => {
     console.log(data);
   });
