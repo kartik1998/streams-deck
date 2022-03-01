@@ -1,0 +1,23 @@
+{
+  "name": "streams-deck",
+  "version": "1.0.0",
+  "description": "- Node JS Streams: [youtube playlist](https://www.youtube.com/playlist?list=PLrwNNiB6YOA18XANsFe0CnizlhYKjJT0f) - Docs: [link](https://nodejs.org/api/stream.html)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kartik1998/streams-deck.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kartik1998/streams-deck/issues"
+  },
+  "homepage": "https://github.com/kartik1998/streams-deck#readme",
+  "dependencies": {
+    "axios": "^0.26.0"
+  }
+}
