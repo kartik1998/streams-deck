@@ -44,3 +44,5 @@
 - [Converting Api reponses with skip to stream](https://github.com/kartik1998/streams-deck/tree/master/api_requests_to_streams)
   - async.queue broke with this approach. If you want concurrency I would recommend using Promise batching
   - async iterator implementation
+  - Using transform streams with async iterator: 
+![](./assets/transform_iterator_example.png)
